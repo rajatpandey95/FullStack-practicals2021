@@ -31,6 +31,9 @@ body{
     font-family: arial;
 }
 
+.fa{
+    margin-right: 5px;
+}
 
 .navbar ul li:hover , .active{
     background-color: gold;
@@ -74,6 +77,6 @@ body{
     margin-top: -50px;
 }
 
-.material-icons{
+.fa-plus{
     color: white;
 }
