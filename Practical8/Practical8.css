@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth;
+}
+
 .menu {
     float: left;
     list-style: none;
@@ -36,10 +41,7 @@
     padding: 15px;
     margin: 0px auto;
 }
-html {
-    scroll-padding-top: 70px;
-    scroll-behavior: smooth;
-}
+
 
 #header{
     width: 1300px;
