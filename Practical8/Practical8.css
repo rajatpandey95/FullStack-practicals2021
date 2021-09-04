@@ -7,7 +7,7 @@
 
 .menu {
     float: left;
-    background-color: grey;
+    list-style: none;
 }
 
 .menu li {
@@ -17,7 +17,7 @@
 .menu li a {
     display: block;
     text-decoration: none;
-    padding: 0px 65px;
+    padding: 0px 20px;
     font-size: 20px;
     color: white;
     text-transform: uppercase;
@@ -32,6 +32,16 @@
     max-width: 1330px;
     padding: 15px;
     margin: 0px auto;
+}
+
+#header{
+    width: 1300px;
+    background-color: grey;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #Banner{
@@ -164,15 +174,14 @@ a:hover{
     background-color: rgb(168, 157, 236); 
     }
 
+    
 #footer h1{
     text-align: center;
     font-size: 50px;
     margin-bottom: 20px;
 }
-
-
 #footer p{
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     background-color: violet;
     font-size: 20px;
