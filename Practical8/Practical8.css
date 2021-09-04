@@ -115,8 +115,7 @@
 #technology{
     width: 100%;
     height: 475px;
-    margin: 15px auto;
-    border: 2px solid black;
+    margin-bottom: 20px;
 }
 
 #technology h2{
@@ -164,3 +163,17 @@
 a:hover{
     background-color: rgb(168, 157, 236); 
     }
+
+#footer h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+#footer p{
+    padding: 30px;
+    text-align: center;
+    background-color: violet;
+    font-size: 20px;
+}
