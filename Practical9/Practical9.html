@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-9">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical - 9</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Practical9.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
+    <style>
+        main {
+          width: 100%;
+          height: 100vh;
+          background-color: skyblue;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .sec {
+          width: 200px;
+          height: 200px;
+          border: 2px solid;
+          display: flex;justify-content: center;align-items: center;
+          font-size: 22px;
+          /* flex:1; */
+
+          width: 293px;
+          height: 274px;
+         background-size: cover;
+    background-repeat: no-repeat;
+        }
+        .sec-1 {
+          /* background-color: orange; */
+          background-image: url(../assests/avatar1.png);
+          border-radius: 50%;
+          order:2;
+          flex-shrink: 0;
+        }
+        .sec-2 {
+          /* background-color: greenyellow; */
+          background-image: url(../assests/avatar1.png);
+          border-radius: 50%;
+          /* flex: 2; */
+          order: 1;
+          /* flex-shrink: 0; */
+        }
+        .sec-3 {
+          /* background-color: yellow; */
+          background-image: url(../assests/avatar1.png);
+          border-radius: 50%;
+          /* flex: 2; */
+          order: 4;
+          /* flex-grow: 1; */
+        }
+        .sec-4 {
+          /* background-color: pink; */
+          background-image: url(../assests/avatar1.png);
+          border-radius: 50%;
+          order: 3;
+        }
+      </style>
+
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <input type="checkbox" id="check">
+            <label for="check" class="show-btn">
+                <span class="material-icons-outlined">
+                    menu
+                    </span>
+            </label>
+            <ul class="menu">
+                <li><a href="#">Homr</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">TECHNOLOGIES</a></li>
+                <li><a href="#">Contact</a></li>
+                <label for="check" class="hide-btn">
+                    <span class="material-icons-outlined">
+                        close
+                        </span>
+                </label>
+            </ul>
+        </div>
+
+        <div class="banner">
+            <h2>Practical 9</h2>
+        </div>
+
+        <main>
+            <section class="sec sec-1"></section>
+            <section class="sec sec-2"></section>
+            <section class="sec sec-3"></section>
+            <section class="sec sec-4"></section>
+          </main>
+
+          
+
+        <div id="team">
+            <h2>Team Members</h2>
+            <div class="circle">
+            </div>
+            <div class="circle">
+            </div>
+            <div class="circle">
+            </div>
+            <div class="circle">
+            </div>
+        </div>
+
+        <div id="about">
+            <h2>About Us</h2>
+            <div class="rightside">
+                <h3>About Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, dolores? Iure dolor voluptatibus
+                    pariatur sed dolorem odio iste quas quidem nihil corporis inventore, officia similique tenetur minus
+                    modi odit magni assumenda? Eligendi iure odio necessitatibus blanditiis a distinctio explicabo
+                    temporibus sit nam id quisquam alias, repellendus soluta libero delectus, excepturi illo suscipit
+                    quam in totam? Explicabo dignissimos saepe, ut dolores illum esse deserunt ab eaque exercitationem
+                    voluptates ex repudiandae, assumenda reprehenderit cumque quia tempora optio nam voluptatem,
+                    doloribus neque praesentium deleniti necessitatibus. Voluptates in necessitatibus nihil aspernatur
+                    odit mollitia magnam atque illum enim eos earum a commodi, sit eum neque. Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit. Vero recusandae voluptatibus tenetur tempore eos accusantium quam
+                    deserunt commodi fugiat libero quod architecto hic voluptate temporibus dolor minus, sed praesentium
+                    ducimus modi odio? Quidem molestias vel autem animi at, ducimus pariatur consequatur eius. Earum
+                    illo at accusamus, possimus dolores aliquid tempore.</p>
+            </div>
+
+            <div class="leftside" >
+                <div id="para1"  class="article">
+                    <h1>Project 1</h1>
+                </div>
+                <div id="para2" class="article">
+                    <h1>Project 2</h1>
+                </div>
+                <div id="para3"  class="article">
+                    <h1>Project 3</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="technology">
+            <h2>Technologies Used</h2>
+            <div class="box">
+                <img src="../assests/Practical6/html.png" alt="Error Loading Image">
+                <h3>Introduction to HTML</h3>
+                <p>
+                    CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web
+                    pages, including colours, layout, and fonts, thus making our web pages presentable to the users.
+                </p>
+
+                <a href="../Practical-5-links/Practical5-html.html">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="../assests/Practical6/css-illustration.png" alt="Error Loading Image">
+                <h3>Introduction to CSS</h3>
+                <p>
+                    CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web
+                    pages, including colours, layout, and fonts, thus making our web pages presentable to the users.
+                </p>
+
+                <a href="../Practical-5-links/Practical5-css.html">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="../assests/Practical6/bootstrap-illustration.png" alt="Error Loading Image">
+                <h3>Introduction to Bootstrap</h3>
+                <p>
+                    Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web
+                    development.
+                </p>
+
+                <a href="../Practical-5-links/Practical5-bootstrap.html">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="../assests/Practical6/javascript.png" alt="Error Loading Image">
+                <h3>Introduction to JavaScript</h3>
+                <p>
+                    JavaScript is a text-based programming language used both on the client-side and server-side that
+                    allows you to make web pages interactive.
+                </p>
+
+                <a href="../Practical-5-links/Practical5-javascript.html">Read More</a>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <h1>Contact</h1>
+            <div >
+                <p>
+                    Website Template for Practical-9 &copy;
+                    <a href="https://beta-labs.in">Beta-labs</a>
+                    <br/>
+                    <br/>
+                    <a href="#top">Back to top</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
