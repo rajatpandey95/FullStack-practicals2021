@@ -182,6 +182,7 @@ html {
 .box {
     width: 20%;
     height: 274px;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -340,4 +341,27 @@ a:hover {
         border-radius: 10px;
         margin-bottom: -20px;
     }
+}
+
+@media(max-width: 600px){
+
+
+    #members{
+        height: 210vh;
+    }
+
+    #members .circle{
+        width: 50%;
+    }
+
+    /* From here technology */
+
+    .boxes{
+        height: 200vh;
+    }
+    .box {
+        width: 51%;
+        margin:10px ;
+    }
+    
 }
