@@ -68,7 +68,7 @@ html {
 
 .banner{
     height: 680px;
-    margin-top: 75px;
+    margin-top: 50px;
     background-image: url(../assests/image3.jpg);
     display: flex;
     font-size: 40px;
@@ -81,6 +81,149 @@ html {
     margin: 20px 57px;
 }
 
+#team{
+    width: 100%;
+    text-align: center;
+    /* padding: 10px;
+    display: inline-block; */
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#members{
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#members .circle{
+    width: 20%;
+    height: 274px;
+    background-image: url(../assests/avatar1.png);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+#aboutus h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+#about{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+}
+.rightside{
+    width: 50%;
+    height: 60vh;
+    overflow: hidden;
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+    background-color: grey;
+}
+.leftside{
+    width: 50%;
+    height: 60vh;
+    margin: 5px;
+}
+.leftside h3{
+    text-align: center;
+    font-size: 30px;
+}
+.article{
+    width: 100%;
+    height: 19vh;
+    margin-bottom: 10px;
+}
+.para1{
+    background-image: url(../assests/project1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.para2{
+    background-image: url(../assests/project2.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.para3{
+    background-image: url(../assests/ProjectManagement.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#technology {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.boxes {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 20%;
+    height: 274px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -2px;
+}
+
+.box a {
+    width: 100%;
+    display: block;
+    background-color: rgb(50, 26, 207);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: -2px;
+}
+
+a:hover {
+    background-color: rgb(168, 157, 236);
+}
+    
+#footer h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#footer p{
+    padding: 10px;
+    text-align: center;
+    background-color: violet;
+    font-size: 20px;
+}
+
 
 @media(max-width: 800px){
 
@@ -91,7 +234,7 @@ html {
     .menu{
         position: fixed;
         top: 0;
-        /* to make Slider Effect*/
+        /* to make Slider Effect */
         right: -100%; 
         width: 100%;
         height: 100vh;
@@ -133,150 +276,65 @@ html {
     .banner h2{
         text-align: justify;
     }
-}
 
+    /* For Teams */
+    #members{
+        height: 100vh;
+    }
 
-#team{
-    width: 100%;
-    height: 378px;
-    text-align: center;
-    margin-bottom: 50px;
-    border: 2px solid black;
-}
+    #members .circle{
+        width: 42%;
+        height: 274px;
+        float: left;
+        margin: 16px 19px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        display: block;
+    }
 
-#team h2{
-    padding: 10px;
-    font-size: 43px;
-}
+    /* From here about us  */
+    #about{
+        height: 125vh;
+        display: inline-block;
+    }
+    .rightside{
+        width: 100%;  
+    }
+    .leftside{
+        width: 100%;
+    }
 
-.circle{
-    width: 22%;
-    height: 274px;
-    background-image: url(../assests/avatar1.png);
-    float: left;
-    margin: 16px 19px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-}
-
-#about{
-    width: 100%;
-    height: 554px;
-    margin-bottom: 50px;
-}
-
-#about h2{
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    font-size: 43px;
+    /* From Here Texhnlology Used  */
     
-}
-
-#para1{
-    background-image: url(../assests/ProjectManagement.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#para2{
-    background-image: url(../assests/project1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#para3{
-    background-image: url(../assests/project2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.rightside {
-    width: 50%;
-    height: 500px;
-    float: left;
-    font-size: 20px;
-    padding: 10px;
-    color: white;
-    background-color: grey;
-    overflow: hidden;
-}
-
-.leftside {
-    width: 48%;
-    height: 500px;
-    float: right;
-    overflow: hidden;
-}
-
-.article {
-    height: 31%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18px;
-    overflow: hidden;
-}  
-
-#technology{
-    width: 100%;
-    height: 475px;
-    margin-bottom: 20px;
-}
-
-#technology h2{
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    font-size: 43px;
-}
-
-.box {
-    width: 20%;
-    float: left;
-    margin-left: 50px;
-    background-color: lightgrey;
-    border-radius: 8px;
+    #technology{
+        width: 100%;
+        margin: 15px auto;
     }
 
-#technology h3{
-    text-align: center;
-}
-
-.box > img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    .boxes{
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 35%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box img{
+        width: 100%;
+        border-radius: 10px;
+        margin-top: -20px;
     }
 
-.box p{
-    text-align: center;
-    margin: 10px;
-    text-align: justify;
-    line-height: 25px;
+    .box a{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: -20px;
     }
-
-.box a{
-    display: block;
-    background-color: rgb(50, 26, 207); 
-    text-align: center; 
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    }
-
-a:hover{
-    background-color: rgb(168, 157, 236); 
-    }
-
-    
-#footer h1{
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-#footer p{
-    padding: 10px;
-    text-align: center;
-    background-color: violet;
-    font-size: 20px;
 }
