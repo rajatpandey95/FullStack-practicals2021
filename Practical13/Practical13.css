@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+
+  body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+  }
+
+  .container {
+    width: 600px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+
+  .basic {
+    background-color: #c1dcd7;
+  }
+
+  .plus {
+    background-color: #bad6c8
+  }
+
+  .delux {
+    background-color: #bbd3dc;
+  }
+
+  .pro {
+    background-color: #d5e4bc;
+  }
+
+  table td,
+  th {
+    width: 150px;
+    padding: 8px 5px;
+    text-align: center;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+  }
+
+  table th {
+    height: 70px;
+    color: #64548f;
+    font-size: 28px;
+  }
+
+  tbody tr:nth-child(odd), tfoot tr:nth-child(odd) {
+    background-color: #edf3e2;
+  }
+
+  tfoot td{
+    line-height: 70px;
+  }
+  a{
+    text-decoration: none;
+    background-color: #64548f;
+    padding: 15px 25px;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    vertical-align: auto;
+  }
+
+  a:hover{
+    background-color:cornflowerblue;
+  }
+
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  tbody tr:first-child td{
+    font-size: 20px;
+    color: green;
+  }
+
+
+  .tick{
+    color: green;
+    font-size: 20px;
+  }
+
+  .cross{
+    color: red;
+    font-size: 20px;
+  }
