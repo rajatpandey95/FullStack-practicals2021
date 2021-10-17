@@ -13,10 +13,8 @@ function decreaseCounter() {
         }
         counter--;
         x.innerHTML = counter;
-
     }
 }
-
 
 function increaseCounter() {
     var x = document.getElementById("pcontainer");
