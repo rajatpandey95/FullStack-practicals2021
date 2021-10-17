@@ -1,18 +1,28 @@
-var counter=0;
+var counter = 0;
 
-function increment(){
-    updateDisplay(++counter);
-}
-function decrement(){
-    
-    if(counter==0){
-        document.getElementById("click").disabled=true;
+function decreaseCounter() {
+    var x = document.getElementById("pcontainer");
+    var y = document.getElementById("decreaseCounter");
+    if (counter == 0) {
+        y.ariaDisabled = true;
+        y.style.opacity = .3;
     }
-    else{
-        updateDisplay(--counter);
-        
+    else {
+        if (counter == 1) {
+            y.style.opacity = .3;
+        }
+        counter--;
+        x.innerHTML = counter;
     }
 }
-function updateDisplay(value){
-    document.getElementById("click").innerHTML=value;
+
+function increaseCounter() {
+    var x = document.getElementById("pcontainer");
+    var y = document.getElementById("decreaseCounter");
+    counter++;
+    x.innerHTML = counter;
+    if (counter > 0) {
+        y.style.opacity = 1;
+        y.style.border = 2;
+    }
 }
