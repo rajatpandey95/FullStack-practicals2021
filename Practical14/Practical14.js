@@ -1,4 +1,4 @@
-let counter = 0
+var counter = 0;
 
 function decreaseCounter() {
     var x = document.getElementById("pcontainer");
