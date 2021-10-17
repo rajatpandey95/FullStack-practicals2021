@@ -1,21 +1,28 @@
 var counter = 0;
 
 function decreaseCounter() {
-    if(counter < 1){
-        document.getElementById("pcontainer").disabled = true;
+    var x = document.getElementById("pcontainer");
+    var y = document.getElementById("decreaseCounter");
+    if (counter == 0) {
+        y.ariaDisabled = true;
+        y.style.opacity = .3;
     }
-    else{
+    else {
+        if (counter == 1) {
+            y.style.opacity = .3;
+        }
         counter--;
-        update(counter);
+        x.innerHTML = counter;
     }
 }
 
 function increaseCounter() {
+    var x = document.getElementById("pcontainer");
+    var y = document.getElementById("decreaseCounter");
     counter++;
-    update(counter);
-}
-
-
-function update(value) {
-    document.getElementById("pcontainer").innerHTML = value;
+    x.innerHTML = counter;
+    if (counter > 0) {
+        y.style.opacity = 1;
+        y.style.border = 2;
+    }
 }
